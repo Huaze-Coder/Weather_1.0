@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f1f1f1;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+	text-align: center;
+}
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.location {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.city {
+	padding: 10px;
+	width: 50%;
+	border: none;
+	border-radius: 5px 0 0 5px;
+	margin-right: 5px;
+}
+
+.btn-get-weather, .btn-get-location {
+	padding: 10px 20px;
+	background-color: #1e90ff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 5px;
+}
+
+.btn-get-weather:hover, .btn-get-location:hover {
+	background-color: #0077b6;
+}
+
+.units {
+	margin-bottom: 20px;
+}
+
+.btn-celsius, .btn-fahrenheit {
+	padding: 10px 20px;
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.btn-celsius:hover, .btn-fahrenheit:hover {
+	background-color: #eee;
+}
+
+.btn-celsius.active {
+	background-color: #1e90ff;
+	color: #fff;
+}
+
+.btn-fahrenheit.active {
+	background-color: #1e90ff;
+	color: #fff;
+}
+
+.weather {
+	margin-top: 20px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.forecast {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	justify-content: center;
+}
+
+.forecast-card {
+	display:inline-block;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	margin: 10px;
+	width: 200px;
+  	vertical-align:middle;
+}
+
+.forecast-date {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.forecast-icon {
+	margin-bottom: 10px;
+}
+
+.forecast-temp {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	.location {
+		flex-direction: column;
+	}
+
+	.city {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.units {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.btn-celsius, .btn-fahrenheit {
+		margin-bottom: 10px;
+	}
+
+	.forecast-card {
+		width: 150px;
+		margin: 5px;
+	}
+}
+
+footer {
+    background-color: #303f9f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+	text-align: center;
+	margin-bottom: 40px;
+}
+#weather-app{
+	color: white;
+}
